@@ -12,3 +12,5 @@ serwer jest wielowątkowym. Wątek podstawowy służy do tworzenia serwera i spr
 Dalej w wątku serwer cały czas szuka nowych klientów. 
 Kiedy mamy połączenie z dwoma klientami tworzy się nowy wątek (pokój), w którym odbywa się gra. 
 Klient przy połączeniu wysyła komunikat do serwera, że jest gotowy. I ropoczyna się gra.
+####
+P.S. To jest początkowy opis który będzie rozszerzał się w miarę robienia projektu.

@@ -30,6 +30,7 @@ class Server
 		void receive(int socket, char* buffer);
 		void send(int socket, char* buffer, int size);
 		void goodbye();
+		int receiveBlock(int socket, char* buffer, int size);
 		std::vector<Player> waitingPlayers; 
 		std::vector<Player> playersInGame;
 

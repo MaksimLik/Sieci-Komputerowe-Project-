@@ -11,6 +11,8 @@ public:
     Player(int fd, std::string name);
     std::string getName();
     int getFd();
+    int board[10][10];
+    bool readyToPlay;
 
 };
 

@@ -77,6 +77,17 @@
 		printf("Wiadomosc od klienta: %s", buffer);
 	}
 
+
+	int Server::receiveBlock(int socket, char* buffer, int size)
+	{
+		bzero(buffer, size);
+		int n = recv(socket, buffer, size, MSG_WAITALL);	
+		if (n < 0)
+			error((char *) "ERROR reading from socket");
+
+		return n;
+	}
+
 	void Server::send(int socket, char* buffer, int size)
 	{
 		int n;
@@ -86,6 +97,7 @@
 			error((char *) "ERROR writing to socket");
 		
 	}
+
 
 
 
